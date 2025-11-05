@@ -1,0 +1,207 @@
+/* 供应商申请 */
+
+.supplier-top {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 25;
+  background-color: white;
+  transition: top 0.5s;
+}
+
+.supplyBox {
+  margin-top: 70px;
+  width: 100%;
+  background-color: #fbf9f7;
+}
+
+.formBox {
+  padding: 37px 0;
+  height: 969px;
+  width: 100%;
+
+}
+
+form {
+  margin: 0 auto;
+  border-radius: 24px;
+  background: rgb(255, 255, 255);
+  width: 668px;
+  height: 884px;
+  padding: 40px 60px;
+
+
+  h2 {
+    text-align: center;
+    height: 39px;
+    margin-bottom: 30px;
+    font-size: 26px;
+  }
+}
+
+.inp_item {
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 8px;
+
+  &:last-child {
+    padding-bottom: 30px;
+  }
+
+  .label {
+    width: 120px;
+    margin-top: 5px;
+    height: 51px;
+    text-align: left;
+    float: left;
+
+    span {
+      color: #ff4d4f;
+      margin-right: 4px;
+    }
+  }
+
+  .inpContainer {
+    flex: 1;
+    position: relative;
+    font-size: 14px;
+
+    input,
+    select {
+      width: 100%;
+      height: 34px;
+      transition: all 0.3s;
+      border-radius: 6px;
+      line-height: 34px;
+      box-sizing: border-box;
+      padding: 4px 11px 4px 12px;
+      outline: none;
+      border: 1px solid #d9d9d9;
+
+      &:hover {
+        border: 1px solid #009919;
+      }
+
+      &:focus {
+        outline: 2px solid rgba(0, 255, 0, 0.184);
+        border: 1px solid #d9d9d9;
+        /* border: 1px solid #ff4d4f; */
+        /* border: 1px solid #009919; */
+      }
+
+    }
+
+    .err {
+      border: 1px solid #ff4d4f !important;
+      outline: ;
+    }
+
+    textarea {
+      width: 100%;
+      height: 110px;
+      box-sizing: border-box;
+      transition: all 0.3s;
+      padding: 4px 11px 4px 12px;
+      border-radius: 6px;
+      resize: vertical;
+      outline: none;
+      border: 1px solid #d9d9d9;
+
+      &:focus {
+        outline: 2px solid rgba(0, 255, 0, 0.184);
+        border: 1px solid rgba(0, 0, 0, 0.507);
+      }
+
+      &:hover {
+        border: 1px solid #219242;
+        transition: all 0.5s;
+      }
+
+    }
+
+    input[type="file"] {
+      border: 1px solid transparent;
+      padding-left: 0;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        border: 1px solid transparent;
+      }
+    }
+
+    .alt {
+      position: absolute;
+      font-size: 14px;
+      left: 0;
+      top: 36px;
+      color: #ff4d4f;
+      visibility: hidden;
+    }
+
+    .alt2 {
+      position: absolute;
+      font-size: 14px;
+      left: 0;
+      bottom: -15px;
+      color: #ff4d4f;
+      visibility: hidden;
+    }
+
+    .show {
+      visibility: visible;
+    }
+  }
+}
+
+.license {
+  height: 35px;
+  margin-bottom: 0px;
+  padding-bottom: 0;
+
+}
+
+#submitBt {
+  display: block;
+  margin: 40px auto;
+  width: 220px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #219242;
+  text-align: center;
+  border: 0;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+
+  &:hover {
+    background-color: #3e9e57;
+  }
+}
+
+#fileInput {
+  display: none;
+}
+
+.select-btn {
+  width: 110px;
+  height: 32px;
+  background: white;
+  border: 1px solid #d9d9d9;
+  padding: 4px 15px;
+  border-radius: 6px;
+
+  &:hover {
+    border: 1px solid #219242;
+    transition: all 0.5s;
+  }
+}
+
+.inp_text {
+  margin-bottom: 20px;
+}

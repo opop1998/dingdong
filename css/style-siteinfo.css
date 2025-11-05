@@ -1,0 +1,107 @@
+/* 底部信息 */
+
+.siteBox {
+  position: relative;
+  height: 333px;
+  padding: 50px 0 40px;
+  background-color: #21252c;
+
+  .topInfo {
+    margin: 0 auto;
+    max-width: 1140px;
+    min-width: 940px;
+    height: 231px;
+    padding-bottom: 30px;
+    font-size: 14px;
+    border-bottom: 1px solid #373b41;
+    display: flex;
+    justify-content: space-between;
+
+    /* logo */
+    .footLogo {
+      display: flex;
+      align-items: center;
+
+      a {
+        display: block;
+        width: 162px;
+        height: 91px;
+        margin-bottom: 25px;
+        margin-right: 70px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+
+    }
+
+    /* 服务 */
+    .footService {
+      display: flex;
+      justify-content: space-between;
+      min-width: 500px;
+      max-width: 560px;
+    }
+
+    .footTitle {
+      color: white;
+    }
+
+    ul li,
+    dd,
+    dt {
+      height: 21px;
+      margin-bottom: 12px;
+      color: rgb(136, 136, 136);
+    }
+
+    /* 二维码 */
+    .footQrcode {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 40px;
+
+      ul:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  /* 最底部 */
+  .footInfo {
+    height: 66px;
+    padding-top: 5px;
+    font-size: 12px;
+    width: 750px;
+    margin: 0 auto;
+
+    p {
+      color: #4d5056;
+      text-align: center;
+      padding-top: 6px;
+      line-height: 14px;
+    }
+
+    .record {
+      a {
+        color: #4d5056;
+      }
+
+      a+a::before {
+        content: "|";
+        margin-right: -2px;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 3px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,57 @@
+.partners {
+  position: relative;
+  height: 470px;
+  padding: 90px 0 120px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+
+  h2 {
+    text-align: center;
+    height: 39px;
+    padding-bottom: 50px;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .viewBox {
+    height: 381px;
+    margin: 0 auto;
+    display: flex;
+
+    .picBox {
+      width: 196px;
+
+      img {
+        display: block;
+        width: 196px;
+        height: 127px;
+      }
+    }
+
+
+  }
+
+  .shadeBox {
+    position: relative;
+
+    .shade1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 10;
+      height: 100%;
+      width: 200px;
+      background: linear-gradient(270deg, hsla(0, 0%, 100%, 0) 0, #fff)
+    }
+
+    .shade2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 10;
+      height: 100%;
+      width: 200px;
+      background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, #fff)
+    }
+  }
+}

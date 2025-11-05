@@ -1,0 +1,849 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.w {
+  margin: 0 auto;
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.dv1 {
+  position: fixed;
+  top: -71px;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 25;
+  background-color: white;
+  transition: top 0.5s;
+}
+
+.top-navw {
+  margin: 0 auto;
+  min-width: 940px;
+  max-width: 1140px;
+  height: 70px;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 1s;
+
+  .logo {
+    height: 70px;
+    width: 113px;
+    background: url(../imgs/log-top.465b4465.png) no-repeat center;
+    background-size: 113px 34px;
+  }
+
+  /* 导航选项 */
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 620px;
+    height: 70px;
+    line-height: 70px;
+
+    li {
+      font-size: 14px;
+
+      &:hover a {
+        color: #219242;
+      }
+
+      .icon-zhankaishouqi {
+        color: #219242;
+        font-size: 12px;
+        margin-left: 3px;
+        line-height: 70px;
+      }
+
+      /* 悬浮列表 */
+      .manu-list1 {
+        position: relative;
+        height: 100%;
+
+        .manu1 {
+          position: absolute;
+          left: -30px;
+          top: 50px;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.4s;
+          background: white;
+          min-width: 160px;
+          max-width: 180px;
+          border-radius: 8px;
+          box-sizing: border-box;
+          padding-top: 12px;
+          padding-left: 25px;
+          padding-right: 12px;
+          padding-bottom: 12px;
+
+          li {
+            padding: 12px 0;
+            line-height: 22px;
+          }
+
+          a {
+            color: #777;
+            font-weight: 400;
+            text-align: center;
+            cursor: pointer;
+          }
+
+          li:hover a {
+            color: black;
+            font-weight: 600;
+          }
+
+        }
+
+        &:hover .manu1 {
+          opacity: 1;
+          top: 55px;
+          visibility: visible;
+        }
+      }
+
+      a {
+        color: black;
+        font-weight: 600;
+
+        &:hover {
+          color: #219242;
+        }
+      }
+
+    }
+
+    .headPage a {
+      color: #219242;
+    }
+  }
+}
+
+.dv2 {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+}
+
+/* 模块1 导航和视频 */
+.top {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 100%;
+
+  /* 视频 */
+  .top-video {
+    video {
+      position: fixed;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #00ff4c00;
+    }
+
+  }
+
+  /*导航栏 */
+  .navBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+/* 透明导航 */
+.top-nav {
+  margin: 0 auto;
+  min-width: 940px;
+  max-width: 1140px;
+  height: 70px;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 1s;
+
+  .logo {
+    height: 70px;
+    width: 113px;
+    background: url(../imgs/logoHeader.238e98fc.png) no-repeat center;
+    background-size: 113px 34px;
+  }
+
+  /* 导航选项 */
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 620px;
+    height: 70px;
+    line-height: 70px;
+
+    li {
+      font-size: 14px;
+
+      &:hover a {
+        color: #219242;
+      }
+
+      .icon-zhankaishouqi {
+        font-size: 12px;
+        margin-left: 3px;
+        line-height: 70px;
+      }
+
+      /* 悬浮列表 */
+      .manu-list1 {
+        position: relative;
+        height: 100%;
+
+        .manu1 {
+          position: absolute;
+          left: -30px;
+          top: 50px;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.4s;
+          background: white;
+          min-width: 160px;
+          max-width: 180px;
+          border-radius: 8px;
+          box-sizing: border-box;
+          padding-top: 12px;
+          padding-left: 25px;
+          padding-right: 12px;
+          padding-bottom: 12px;
+
+          li {
+            padding: 12px 0;
+            line-height: 22px;
+          }
+
+          a {
+            color: #777;
+            font-weight: 400;
+            text-align: center;
+            cursor: pointer;
+          }
+
+          li:hover a {
+            color: black;
+            font-weight: 600;
+          }
+
+        }
+
+        &:hover .manu1 {
+          opacity: 1;
+          top: 55px;
+          visibility: visible;
+        }
+      }
+
+      a {
+        color: white;
+        font-weight: 600;
+
+        &:hover {
+          color: #219242;
+        }
+      }
+
+    }
+
+    &>li+li {
+      margin-left: 17px;
+    }
+
+    .headPage a {
+      color: #219242;
+    }
+  }
+}
+
+.fake-video {
+  overflow: hidden;
+  /* height: 100vh; */
+  margin-top: -70px;
+
+  video {
+    display: block;
+    width: 100%;
+    opacity: 0;
+    /* height: 100vh; */
+    visibility: hidden;
+  }
+}
+
+/* 大字广告 */
+.topCenter-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 125vh;
+
+  display: flex;
+  justify-content: center;
+  /* 默认水平轴row align-items表示交叉轴(垂直)上对齐 */
+  align-items: center;
+
+  .top-center {
+    text-align: center;
+    width: 100%;
+    line-height: 1.5;
+
+    p {
+      font-size: 44px;
+      font-weight: 600;
+      color: white;
+    }
+
+    .play-img {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      margin-top: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+/* 点击绿色按钮 */
+.playerBox {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+
+  .newVideo {
+    height: 100%;
+  }
+
+  .closebutton {
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+/* 模块2 三大确定 */
+.certainty {
+  padding-top: 64px;
+  position: relative;
+  background-color: #fff9e9;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+
+  .certainty-container {
+    height: 450px;
+    width: 100%;
+    position: relative;
+    background-color: #fff9e9;
+
+    /* 顶部标题 */
+    .title {
+      font-size: 20px;
+      height: 30px;
+      color: rgb(210, 166, 78);
+      width: 100%;
+      position: absolute;
+      text-align: center;
+      left: 0;
+      top: 10px;
+    }
+
+    /* 切换页 */
+    .certainty-main {
+      position: relative;
+      /* height: 450px; */
+      width: 100%;
+      text-align: center;
+
+      /* 轮播页 */
+      .certains-page {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        width: 90%;
+        max-width: 90%;
+        min-width: 1006px;
+        height: 450px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        .main-imgs {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          justify-content: space-around;
+          width: 400%;
+
+          /* 标头图片 */
+          .title-img {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin: 0 auto;
+
+            img {
+              display: block;
+              max-width: 325px;
+              height: 82px;
+              margin-bottom: 5px;
+            }
+          }
+
+          /* 展示三张图 */
+          .certain-imgs {
+            display: flex;
+            width: 100%;
+            max-width: 1006px;
+            max-height: 170px;
+            justify-content: center;
+            gap: 20px;
+
+            img {
+              display: block;
+              max-width: 322px;
+              max-height: 170px;
+
+            }
+          }
+
+        }
+
+
+
+      }
+
+      /* 前后切换 */
+      .previous,
+      .next {
+        background: rgba(0, 0, 0, .3);
+        border-radius: 50%;
+        position: absolute;
+        margin: 0 16px;
+        top: 45%;
+        z-index: 1;
+        width: 32px;
+        height: 53px;
+
+        a {
+          display: block;
+          cursor: pointer;
+
+          img {
+            width: 32px;
+            height: 53px;
+          }
+        }
+      }
+
+      .previous {
+        left: 0;
+
+      }
+
+      .next {
+        right: 0;
+      }
+
+      /* 圆点 */
+      .controls {
+        width: 72px;
+        height: 21px;
+        position: absolute;
+        /* background-color: red; */
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-evenly;
+
+        span {
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #dddddd;
+          margin-top: 7px;
+
+          cursor: pointer;
+        }
+
+        .active {
+          background-color: #585858;
+        }
+      }
+
+    }
+  }
+}
+
+/* 模块3 叮咚服务 */
+.service {
+  height: 964px;
+  position: relative;
+  z-index: 10;
+
+  /* 1过渡波浪 */
+  .wave {
+    position: relative;
+    background-color: #fff9e9;
+    height: 140px;
+    width: 100%;
+    /* overflow: hidden; */
+
+    .wave1 {
+      position: absolute;
+      top: 5px;
+      width: 344px;
+      height: 143px;
+      z-index: 0;
+      background: url(../imgs/serve04.png) no-repeat center;
+      background-size: cover;
+    }
+
+    .wave2 {
+      position: absolute;
+      right: 0;
+      top: 0px;
+      width: 278px;
+      height: 213px;
+      z-index: 0;
+      background: url(../imgs/serve02.png) no-repeat center;
+      background-size: cover;
+    }
+
+    .wave3 {
+      position: absolute;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 140px;
+      z-index: 0;
+      background: url(../imgs/greenwave.png) no-repeat center;
+      background-size: cover;
+    }
+
+  }
+
+  /* 底部波浪 */
+  .wave4 {
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    z-index: 0;
+    background: url(../imgs/greenwave2.png) no-repeat center;
+    background-size: cover;
+  }
+
+  .greenBotton {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 143px;
+    height: 381px;
+    z-index: 5;
+    background: url(../imgs/serve01.png) no-repeat center;
+  }
+
+  /* 四个服务选项 */
+  .service-box {
+    position: relative;
+    height: 684px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    background-color: #0f4f3f;
+
+    /* 绿色背景填充 */
+    .filling1 {
+      position: absolute;
+      top: -44px;
+      left: 0;
+      width: 231px;
+      height: 295px;
+      z-index: 0;
+      background: url(../imgs/leftTopBg.png) no-repeat center;
+      background-size: cover;
+
+    }
+  }
+
+  /* 服务选项 */
+  .mainService {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    height: 642px;
+    width: 1000px;
+    margin: 0 auto;
+    min-width: auto;
+    max-width: 100%;
+  }
+
+  /* 左 */
+  .service-lfet {
+    position: relative;
+    width: 600px;
+    /* background-color: rgba(152, 251, 152, 0.078); */
+
+    .serTitle {
+      font-size: 26px;
+      color: #fff9e9;
+      font-weight: 600;
+      padding-top: 44px;
+      padding-left: 16px;
+    }
+
+    .slogan {
+      font-size: 18px;
+      font-weight: 400;
+      color: #fff9e9;
+      padding-top: 10px;
+      opacity: .39;
+      padding-left: 16px;
+      padding-bottom: 48px;
+    }
+
+    /* 四个选项 */
+    .ser-items {
+      max-width: 548px;
+      margin-bottom: 47px;
+
+      ul li {
+        color: #fff9e9;
+        border-radius: 10px;
+        padding: 15px 16px;
+        font-size: 14px;
+
+        .item-name {
+          font-size: 20px;
+          color: #fff9e9;
+          font-weight: 600;
+          display: flex;
+
+          .item-title {
+            padding-left: 12px;
+          }
+        }
+
+        .item-text {
+          color: black;
+          padding-top: 7px;
+          padding-left: 43px;
+        }
+
+
+      }
+
+      .show {
+        background-color: #fff9e9;
+        margin-bottom: 30px;
+
+        .item-name {
+          color: #ec7d4a;
+        }
+      }
+
+      .hide {
+        display: none;
+      }
+
+
+    }
+
+    /* 二维码 */
+    .serviceCode {
+      display: block;
+      position: absolute;
+      left: 51px;
+      bottom: 17px;
+    }
+  }
+
+  /* 右 */
+  .service-right {
+    position: relative;
+    width: 286px;
+  }
+
+  .phone {
+    position: relative;
+    background-color: rgba(175, 238, 238, 0.132);
+    width: 286px;
+    height: 583px;
+    margin-top: 59px;
+    overflow: hidden;
+    text-align: center;
+    z-index: 20;
+    background: url(../imgs/iphoneBg.png) no-repeat;
+    background-size: 100% 100%;
+
+    img {
+      max-width: 257px;
+      height: 552px;
+      display: inline-block;
+      margin-top: 15px;
+    }
+  }
+
+  /* 悬浮菜 */
+  .vegetable1,
+  .vegetable2,
+  .vegetable3,
+  .vegetable4,
+  .vegetable5,
+  .vegetable6,
+  .vegetable7 {
+    position: absolute;
+    z-index: 10;
+    animation: vegeAni 5s ease-in-out infinite;
+  }
+
+  .vegetable1 {
+    top: 10px;
+    right: -190px;
+    width: 199px;
+    height: 250px;
+    background: url(../imgs/sc01.png) no-repeat;
+    background-size: 199px 250px;
+    animation-delay: 2s;
+  }
+
+  .vegetable2 {
+    width: 120px;
+    height: 113px;
+    top: 240px;
+    left: -105px;
+    background: url(../imgs/sc02.png) no-repeat;
+    background-size: 120px 113px;
+    animation-delay: 1s;
+  }
+
+  .vegetable3 {
+    width: 150px;
+    height: 205px;
+    top: 470px;
+    right: -113px;
+    background: url(../imgs/sc03.png) no-repeat;
+    background-size: 150px 205px;
+    animation-delay: 1.8s;
+  }
+
+  .vegetable4 {
+    width: 90px;
+    height: 67px;
+    top: 330px;
+    z-index: 5;
+    right: -195px;
+    background: url(../imgs/sc04.png) no-repeat;
+    background-size: 90px 67px;
+    animation-delay: 0.5s;
+  }
+
+  .vegetable5 {
+    width: 98px;
+    height: 80px;
+    top: 703px;
+    left: -75px;
+    background: url(../imgs/sc05.png) no-repeat;
+    background-size: 98px 80px;
+    animation-delay: 1s;
+  }
+
+  .vegetable6 {
+    width: 249px;
+    height: 258px;
+    top: 495px;
+    right: 85px;
+    z-index: 10;
+    background: url(../imgs/sc06.png) no-repeat;
+    background-size: 249px 258px;
+    animation-delay: 0s;
+  }
+
+  .vegetable7 {
+    width: 97px;
+    height: 209px;
+    top: 757px;
+    left: 0;
+    background: url(../imgs/sc07.png) no-repeat;
+    background-size: 97px 209px;
+    animation-delay: 0s;
+  }
+
+}
+
+/* 动画写在外面 不然会失效 */
+@keyframes vegeAni {
+
+  0%,
+  100% {
+    transform: translateY(0)
+  }
+
+  50% {
+    transform: translateY(-35px)
+  }
+}

@@ -1,0 +1,76 @@
+/* 模块4 新闻中心 */
+.newsCenter {
+  position: relative;
+  height: 482px;
+  padding: 50px 0 100px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.newBox {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1106px;
+  font-size: 14px;
+
+  h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    height: 37px;
+    line-height: 37px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  ul li {
+    height: 21px;
+    padding: 15px 0;
+
+    a {
+      display: flex;
+      justify-content: space-between;
+      color: black;
+      text-align: right;
+
+      .newsTime {
+        height: 21px;
+        padding-left: 18px;
+        display: inline-block;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+    }
+
+    &:hover a {
+      color: #219242;
+    }
+
+    &:hover .newsTime {
+      font-weight: 700;
+    }
+  }
+}
+
+.moreNews {
+  width: 132px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 25px;
+  background-color: #219242;
+  margin: 90px auto;
+  box-sizing: border-box;
+  padding: 0 16px;
+  min-width: 64px;
+
+  a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &:hover {
+    background-color: #329b51;
+  }
+}
